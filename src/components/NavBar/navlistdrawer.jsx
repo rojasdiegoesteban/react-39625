@@ -7,6 +7,7 @@ import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Box from '@mui/system/Box';
+import { NavLink } from 'react-router-dom';
 
 
 const NavListDrawer = (props) => {
@@ -41,7 +42,7 @@ const NavListDrawer = (props) => {
                 <List component="div" disablePadding>
                 {
                     props.marcas.map(marca => (
-                        <ListItemButton key={marca} sx={{ pl: 4 }}>
+                        <ListItemButton component={NavLink} to={`marcas/${marca}`} key={marca} sx={{ pl: 4 }}>
                         <ListItemText primary={marca} />
                         </ListItemButton>
                     ))
@@ -57,7 +58,7 @@ const NavListDrawer = (props) => {
                 <List component="div" disablePadding>
                 {
                     props.zapas.map(zapa => (
-                        <ListItemButton key={zapa} sx={{ pl: 4 }}>
+                        <ListItemButton component={NavLink} to={`zapatillas/${zapa}`} key={zapa} sx={{ pl: 4 }}>
                         <ListItemText primary={zapa} />
                         </ListItemButton>
                     ))

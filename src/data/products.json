@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "marca": "Nike",
+      "modelo": "Jordan 1 mid",
+      "color" : "Grey Light / Bone White",
+      "genero": "Hombre",
+      "imagen": "https://www.thenextsole.com/storage/images/554724-082.png"
+    },
+    {
+        "id": 2,
+        "marca": "Nike",
+        "modelo": "Air Force 1",
+        "color" : "White",
+        "genero": "Hombre",
+        "imagen": "https://i8.amplience.net/i/jpl/jd_027536_a?v=1"
+    },
+    {
+        "id": 3,
+        "marca": "Nike",
+        "modelo": "Air Max",
+        "color" : "Pink",
+        "genero": "Mujer",
+        "imagen": "https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw46619d8d/products/NI_CW4554-201/NI_CW4554-201-1.JPG?sw=400&sh=400"
+    },
+    {
+        "id": 4,
+        "marca": "Adidas",
+        "modelo": "Superstar",
+        "color" : "Cream White / Core Black",
+        "genero": "Hombre",
+        "imagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c4eef76ad3664fb19a7dae1e00326612_9366/Zapatillas_Superstar_Pride_Blanco_GX6395_01_standard.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "Adidas",
+        "modelo": "Ozweego",
+        "color" : "White",
+        "genero": "Mujer",
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaPE/17810593_1?wid=800&hei=800&qlt=70"
+    },
+    {
+        "id": 6,
+        "marca": "Vans",
+        "modelo": "Old School",
+        "color" : "black",
+        "genero": "Mujer",
+        "imagen": "https://d22fxaf9t8d39k.cloudfront.net/bb8e464ecfd284e15df943805d2a8acb4df92237e4ef1e68845eaf382f2a96b4108866.jpeg"
+    },
+    {
+        "id": 7,
+        "marca": "Jordan",
+        "modelo": "Air 3 retro",
+        "color" : "white",
+        "genero": "Hombre",
+        "imagen": "https://www.nbamaniacs.com/wp-content/uploads/2013/03/Air-Jordan-III.png"
+    }
+  ]

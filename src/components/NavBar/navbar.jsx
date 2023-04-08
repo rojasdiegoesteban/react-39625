@@ -13,6 +13,7 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import Drawer from '@mui/material/Drawer';
 import NavListDrawer from './navlistdrawer';
 import CartWidget from '../CartWidget';
+import { NavLink } from 'react-router-dom';
 
 const marcas = ['Adidas', 'Nike', 'Jordan', 'Vans'];
 const zapas = ['Hombre', 'Mujer'];
@@ -52,8 +53,8 @@ const NavBar = () => {
           <Typography
             variant="h5"
             noWrap
-            component="a"
-            href="/"
+            component={NavLink}
+            to="/"
             sx={{
               mr: 12,
               display: { xs: 'none', md: 'flex' },
@@ -66,7 +67,6 @@ const NavBar = () => {
           >
             CrAzySTorE
           </Typography>
-
           {/* Menu Hamburguesa */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -93,8 +93,8 @@ const NavBar = () => {
           <Typography
             variant="h4"
             noWrap
-            component="a"
-            href=""
+            component={NavLink}
+            to="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -132,7 +132,7 @@ const NavBar = () => {
             >
               {marcas.map((marca) => (
                 <MenuItem key={marca} onClick={handleCloseMarcaMenu}>
-                  <Typography textAlign="center" >{marca}</Typography>
+                  <Typography component={NavLink} to={`marcas/${marca}`} textAlign="center" sx={{ textDecoration: 'none' }}>{marca}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -156,7 +156,7 @@ const NavBar = () => {
             >
               {zapas.map((zapa) => (
                 <MenuItem key={zapa} onClick={handleCloseZapaMenu}>
-                  <Typography textAlign="center" >{zapa}</Typography>
+                  <Typography component={NavLink} to={`zapatillas/${zapa}`} textAlign="center" sx={{ textDecoration: 'none' }}>{zapa}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -164,17 +164,17 @@ const NavBar = () => {
           <Box sx={{ flexGrow: 0, display: 'flex', }}>
             <CartWidget />
             <Typography
-            variant="h6"
-            sx={{
-              mr: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            0
-          </Typography>
+              variant="h6"
+              sx={{
+                mr: 1,
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                color: 'inherit',
+                textDecoration: 'none',
+              }}
+            >
+              0
+            </Typography>
           </Box>
         </Toolbar>
       </Container>
